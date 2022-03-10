@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Simplesmente Palmeiras: Portal de Notícias</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img class="escudo" src="imagens/escudo-palmeiras_edited.jpg" alt="Escudo Palmeiras">
+    </div>
+    <nav>
+      <ul>
+        <a target="_blank" href="">
+          <li>Início</li>
+        </a>
+        <a target="_blank" href="">
+          <li>Fórum</li>
+        </a>
+        <a target="_blank" href="">
+          <li>Notícias</li>
+        </a>
+        <a target="_blank" href="">
+          <li>Contatos</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="fotos-e-noticias">
+      <a class="sec1" target="_blank" href="">
+        <img class="foto" src="Imagens/castellanos.jpeg" alt="">
+        <h1>"Castellanos não deve chegar", diz jornalista do Sportv</h1>
+      </a>
+      <a class="sec1" target="_blank" href="">
+        <img class="foto" src="Imagens/raphael-veiga.jpg" alt="">
+        <h1>Rafael Veiga completa 120 jogos pelo Palmeiras</h1>
+      </a>
+      <aside class="enquete1">
+        <p>Qual é o maior treinador da história do Palmeiras na sua opinião?</p>
+        <form name="form1" method="post" onSubmit="enquete();">
+          <input type="radio" name="tfav" id="luxemburgo" value="luxemburgo">
+          <label for="luxemburgo">Luxemburgo</label><br>
+          <input type="radio" name="tfav" id="felipao" value="felipao">
+          <label for="felipao">Felipão</label><br>
+          <input type="radio" name="tfav" id="abelferreira" value="abelferreira">
+          <label for="abelferreira">Abel Ferreira</label><br><br>
+          <input id="submite" type="submit" value="Enviar">
+        </form>
+      </aside>
+      <a class="sec1" target="_blank" href="">
+        <img class="foto" src="Imagens/marcos-rocha.jpg" alt="">
+        <h1>Briga por vaga na lateral direita deve ficar acirrada com promoção de Garcia</h1>
+      </a>
+      <a class="sec1" target="_blank" href="">
+        <img class="foto" src="Imagens/willian-bigode.jpg" alt="">
+        <h1>Depois de Felipe Melo, Willian deve ser o próximo a sair</h1>
+      </a>
+      <aside class="enquete2">
+        <p>Receba nossa newsletter</p>
+        <form>
+          <label for="nome">Nome</label><br>
+          <input type="text" name="nome" id="nome"><br>
+          <label for="email">E-mail</label><br>
+          <input type="text" name="email" id="email"><br><br>
+          <input onclick="newsletter()" id="submitn" type="submit" value="Enviar">
+        </form>
+      </aside>
+    </section>
+    <div class="noticias-em-texto">
+      <section class="sec2">
+        <h2>Notícias:</h2>
+        <p><a href="">Lista de inscritos da Libertadores deve ser enviada até amanhã</a></p>
+        <p><a href="">Weverton comemora marca de 50 jogos sem ser vazado: "Muito feliz"</a></p>
+        <p><a href="">Jogadores do sub-20 treinam junto com elenco principal</a></p>
+        <p><a href="">Receita do clube social tem previsão de aumento de 19%</a></p>
+        <p><a href="">Verdão terá sequência difícil pelo Paulista: Confira</a></p>
+        <p><a href="">Desde Novembro sem jogar, Verón se diz preparado: "Pronto para ajudar o professor"</a></p>
+        <p><a href="">Enxente no bairro da Pompéia faz estragos no Allianz Parque: Veja fotos</a></p>
+        <p><a href="">Greve dos caminhoneiros deve arrefecer, diz especialista</a></p>
+      </section>
+      <aside class="classificacao">
+        <p>Classificação Campeonato Paulista</p>
+        <p>Grupo C</p>
+        <table>
+          <tr>
+            <th>Clube</th>
+            <th>Pts</th>
+            <th>PJ</th>
+          </tr>
+          <tr class="palmeiras">
+            <td>Palmeiras</td>
+            <td>20</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>Mirassol</td>
+            <td>17</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Ituano</td>
+            <td>15</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Botafogo SP</td>
+            <td>15</td>
+            <td>10</td>
+          </tr>
+        </table>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <p class="foot">Simplesmente Palmeiras SA - CNPJ: 03.778.130/0001-53 - Rua das Palmeiras, 1.951, Pompéia, São
+      Paulo/SP - E-mail:
+      simplesmente.palmeiras@gmail.com</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
